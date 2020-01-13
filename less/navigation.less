@@ -8,11 +8,20 @@
         .header {
             display: flex;
             width: 100%;
-            border-bottom: 3px dotted lightblue;
+            border-bottom: 2px dashed silver;
+
+            @media @mobile {
+                flex-direction: column;
+            }
 
             .logo {
                 width: 50%;
                 padding: 2% 0;
+
+                @media @mobile {
+                    margin: 0 auto;
+                    text-align: center;
+                }
             }
     
             nav {
@@ -20,6 +29,11 @@
                 display: flex;
                 justify-content: flex-end;
                 padding: 3% 0;
+
+                @media @mobile {
+                    margin: 0 auto;
+                    text-align: center;
+                }
     
                 a {
                     display: flex;
@@ -35,9 +49,8 @@
         }
 
         .content-section {
-
-            border-bottom: 3px dotted lightblue;
-
+            border-bottom: 2px dashed silver;
+            
             h2 {
                 padding: 1% 0;
             }
